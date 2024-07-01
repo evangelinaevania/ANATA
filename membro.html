@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/estilo.css">
+</head>
+<body>
+
+    <main class="main">
+        <aside class="col-2 position-relative menu bg-fundo text-white ">
+            <h2 class="p-4 text-center">Menu</h2>
+            <ul class=" ">
+                <li class="nav p-2 "><a href="principal.html">Home</a></li>
+                <li class="nav p-2"><a href="funcionario.html">Funcionários</a></li>
+                <li class="nav p-2"><a href="brigada.html">Brigadas</a></li>
+                <li class="nav p-2"><a href="agendamento.html">Marcações</a></li>
+                <li class="nav p-2"><a href="membro.html">Membros</a></li>
+                <li class="nav p-2"><a href="rota.html">Rotas</a></li>
+                <li class="nav p-2"><a href="usuario.html">Utilizadores</a></li>
+                <li class="nav p-2"><a href="pagamento.html">Pagamentos</a></li>
+                <li class="nav p-2"><a href="index.html">Sair</a></li>
+            </ul>
+        </aside>
+        <div class=" w-100">
+            <nav class="navbar bg-body-tertiary text-black ">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/img/ANATA IMG.jpg " class="rounded-circle" alt="Logo" width="70" height="50"
+                            class="d-inline-block align-text-top">
+                    </a>
+
+                    <li class="nav p-2"><a href=""><i class="bi bi-person-fill"></i>Admin</a></li>
+                </div>
+            </nav>
+
+            <!--cpnteudo principal da pagina-->
+            <h3 class="text-center mt-3">REGISTRO DE MEMBROS</h3>
+
+            <section class="col-12 m-top ">
+                <div class="row">
+                    <form action="principal.html" class=" col-8 m-auto  mt-3">
+                        <div class="row">
+                            <div class="col-6 mb-5">
+                                <input type="nome" class="form-control m-1" required placeholder="Escreva o nome">
+                                <input type="text" class="form-control m-1" required placeholder="Escreva n_bilhete ">
+                                <input type="email" class="form-control m-1" required placeholder="Escreva o email">
+
+                            </div>
+
+                            <div class="col-6  mb-5">
+                                <input type="date" class="form-control m-1" required placeholder="Escreva a data_nascimento">
+
+                                <select name=""  class="form-control m-1" id="">
+                                    <option value="" name="">Escreva o genero</option>
+                                    <option value="M" name="">Masculino</option>
+                                    <option value="F" name="">Feminino</option>
+                                </select>
+
+                                <input type="number" class="form-control m-1" placeholder="Escreva o telefone">
+                            </div>
+                        </div>
+                          <div class="row">
+                            <div class="col-6 mb-5">
+                                <input type="nome" class="form-control m-1" required placeholder="Escreva a nacionalidade">
+                                <input type="text" class="form-control m-1" required placeholder="Escreva provincia ">
+                                <input type="nome" class="form-control m-1" required placeholder="Escreva a morada">
+                                <input type="number" class="form-control m-1" required placeholder="Escreva o id_funcao_membro">
+                                    </div>
+        
+                                    <div class="col-6  mb-5">
+                                        <input type="text" class="form-control m-1" placeholder="carta_de_conducao">
+                                        <input type="date" class="form-control m-1" placeholder="data_expir_carta">
+                                        <input type="nome" class="form-control m-1" required placeholder="Escreva o grau">
+                                        <input type="number" class="form-control m-1" required placeholder="Escreva o num_associado">
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <button class=" btn bg-fundo text-white botao mt-2">Registrar</button>
+                                        <a href="status.html" class="btn bg-fundo botao text-white mt-2"><i class="a bi bi-search"></i> Buscar</a>
+
+                                        </div>
+                                        </form>
+                                    </div>
+                                </div>
+                
+    
+            </div>
+        </section>
+    </main>
+    
+        
+    
+</body>

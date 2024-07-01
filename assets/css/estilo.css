@@ -1,0 +1,49 @@
+.center-v{
+    display: flex;
+    align-items: center;
+}
+aside ul li a{
+  text-decoration: none;
+  color: #ffff;
+  
+}
+
+a{
+  text-decoration: none;
+}
+
+.menu{
+  height: 100vh;
+}
+aside ul li:hover{
+  margin: 2px;
+  background-color:#ffff;
+  color: #0000;
+  border-radius: 5%;
+  width: 70%;
+  transition: 1s;
+}
+
+main{
+  display: flex;
+  align-items: start;
+}
+
+nav.navbar{
+  background: #dbdfdf;
+}
+  
+.bg-fundo{
+  background-color: #00A1D7;
+} 
+
+.botao:hover{
+  padding: 5px;
+  transition: 1s;
+} 
+
+.table-scroll {
+  display: block;
+  height: 200px;
+  overflow-y: auto;
+}
