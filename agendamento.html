@@ -43,49 +43,102 @@
             <!--cpnteudo principal da pagina-->
             <h3 class="text-center mt-3">REGISTRO DE AGENDAMENTO</h3>
 
-            <section class="col-10 m-top ">
+            <section class="col-12 m-top m-auto ">
                 <div class="row">
-                    <form action="principal.html" class=" col-12  mt-3">
+                    <form action="principal.html" class=" col-4  mt-5">
+                        <div class="col-10 m-auto mb-5">
+                            <input type="text" class="form-control m-1" required placeholder="Escreva o assunto ">
+                            <input type="time" class="form-control m-1" required placeholder="Escreva a hora_inicio">
+                            <input type="time" class="form-control m-1" required placeholder="Escreva a  hora_termino">
+                            
+                            <input type="date" class="form-control m-1" required placeholder="Escreva a data ">
+                            <input type="text" class="form-control m-1" required placeholder="Escreva o Local ">
+                            <textarea type="text" class="form-control m-1" required placeholder="Escreva a descricao"></textarea>
 
-                        <div class="row">
-                            <div class="col-6 mb-5">
-                                <input type="text" class="form-control m-1" required placeholder="Escreva a hora_inicio">
-                                <input type="text" class="form-control m-1" required placeholder="Escreva a hora_termino">
-                                <input type="date" class="form-control m-1" required placeholder="Escreva a data">
-                                <input type="text" class="form-control m-1" required placeholder="Escreva o local ">
+                            <select type="text" class="form-control m-1" required>
+                                <option value="">Seleciona o Tipo de Marcação</option>
+                                <option value="">Vista</option>
+                                <option value="">Reunião</option>
+                                <option value="">Conferencia</option>
+                            </select>
 
-                        </div>
-                        
-                            <div class="col-6 mb-5">
-                                <input type="text" class="form-control m-1" required placeholder="Escreva a descricao">
-                                <input type="text" class="form-control m-1" required placeholder="Escreva o id_tipo_agendamento">
-                                <input type="number" class="form-control m-1" placeholder="Escreva o id_brigada">
-                        </div>
-                        
-                        </div>
+                            <input type="number" class="form-control m-1" placeholder="Escreva o id_brigada">
 
+                            <div class="mt-2">
+                                <button class=" btn bg-fundo col-12 text-white botao mt-2">Registrar</button>
+                            </div>
                         </div>
-
-                        <div class="d-flex justify-content-between">
-                            <button class=" btn bg-fundo text-white botao mt-2">Registrar</button>
-                            <a href="" class="btn bg-fundo botao text-white mt-2"><i class="a bi bi-search"></i> Buscar</a>
-                        </div>
-                           
                     </form>
+
+
+                    <div class="col-7 mt-5 p-3 border">
+                        <table class="table table-striped rota-table-scroll bg-light ">
+                            <thead class="thead-light">
+                                <th>Nº</th>
+                                <th>Assunto</th>
+                                <th>Hora_inicio</th>                                
+                                <th>hora_termino</th>
+                                <th>data</th>
+                                <th>local</th>                                
+                                <th>opções</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Ajuste de preços</td>
+                                    <td>12:00</td>
+                                    <td>17:20</td>
+                                    <td>12/08/2024</td>
+                                    <td>Sede Anata</td>
+                                    <td>
+                                        <a href="perfil.html"><i class="text-info bi bi-eye-fill"></i></a>
+                                        <a href="funcionario.html"><i class="text-warning bi bi-brush-fill"></i></a>
+                                        <a href=""><i class="text-danger bi bi-x-square-fill"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Ajuste de preços</td>
+                                    <td>12:00</td>
+                                    <td>17:20</td>
+                                    <td>12/08/2024</td>
+                                    <td>Sede Anata</td>
+                                    <td>
+                                        <a href="perfil.html"><i class="text-info bi bi-eye-fill"></i></a>
+                                        <a href="funcionario.html"><i class="text-warning bi bi-brush-fill"></i></a>
+                                        <a href=""><i class="text-danger bi bi-x-square-fill"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Ajuste de preços</td>
+                                    <td>12:00</td>
+                                    <td>17:20</td>
+                                    <td>12/08/2024</td>
+                                    <td>Sede Anata</td>
+                                    <td>
+                                        <a href="perfil.html"><i class="text-info bi bi-eye-fill"></i></a>
+                                        <a href="funcionario.html"><i class="text-warning bi bi-brush-fill"></i></a>
+                                        <a href=""><i class="text-danger bi bi-x-square-fill"></i></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
                 </div>
-        </div>
-        </section>
 
+            </section>
 
-
-        <!--FIM CONTEUDO-->
+            <!--FIM CONTEUDO-->
         </div>
 
     </main>
 
 
 </body>
-    
-        
-    
+
+
+
 </body>

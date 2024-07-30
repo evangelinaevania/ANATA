@@ -47,3 +47,10 @@ nav.navbar{
   height: 200px;
   overflow-y: auto;
 }
+
+.rota-table-scroll {
+  
+  display: block;
+  height: 60vh;
+  overflow-y: auto;
+}

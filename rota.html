@@ -1,48 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/estilo.css">
-
 </head>
+
 <body>
-    
+
     <main class="main">
         <aside class="col-2 position-relative menu bg-fundo text-white ">
             <h2 class="p-4 text-center">Menu</h2>
             <ul class=" ">
-                <li class="nav p-2 "><a href="principal.html" >Home</a></li>
-                <li class="nav p-2"><a href="funcionario.html" >Funcionários</a></li>
-                <li class="nav p-2"><a href="brigada.html" >Brigadas</a></li>
-                <li class="nav p-2"><a href="agendamento.html" >Marcações</a></li>
-                <li class="nav p-2"><a href="membro.html" >Membros</a></li>
-                <li class="nav p-2"><a href="rota.html" >Rotas</a></li>
-                <li class="nav p-2"><a href="usuario.html" >Utilizadores</a></li>
-                <li class="nav p-2"><a href="pagamento.html" >Pagamentos</a></li>
-                <li class="nav p-2"><a href="index.html" >Sair</a></li>
+                <li class="nav p-2 "><a href="principal.html">Home</a></li>
+                <li class="nav p-2"><a href="funcionario.html">Funcionários</a></li>
+                <li class="nav p-2"><a href="brigada.html">Brigadas</a></li>
+                <li class="nav p-2"><a href="agendamento.html">Marcações</a></li>
+                <li class="nav p-2"><a href="membro.html">Membros</a></li>
+                <li class="nav p-2"><a href="rota.html">Rotas</a></li>
+                <li class="nav p-2"><a href="usuario.html">Utilizadores</a></li>
+                <li class="nav p-2"><a href="pagamento.html">Pagamentos</a></li>
+                <li class="nav p-2"><a href="index.html">Sair</a></li>
             </ul>
         </aside>
-        <div class="  w-100">
-            <nav class="navbar  bg-body-tertiary text-black ">
+        <div class=" w-100">
+            <nav class="navbar bg-body-tertiary text-black ">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="#">
-                    <img src="assets/img/ANATA IMG.jpg " class="rounded-circle" alt="Logo" width="80" height="60" class="d-inline-block align-text-top">
-                    ANATA
-                  </a>
-                     
-                    <li class="nav p-2"><a href="" >Evangelina</a></li>
-                </div>
-              </nav>
-                <!--cpnteudo principal da pagina-->
-                <h1>ANATA INVESTIR NO PRESENTE PARA GARANTIR O FUTURO DOS TAXISTAS DE ANGOLA</h1>
-            </div>
-            
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/img/ANATA IMG.jpg " class="rounded-circle" alt="Logo" width="70" height="50"
+                            class="d-inline-block align-text-top">
+                    </a>
 
+                    <li class="nav p-2"><a href=""><i class="bi bi-person-fill"></i>Admin</a></li>
+                </div>
+            </nav>
+
+            <!--cpnteudo principal da pagina-->
+            <h3 class="text-center mt-3 ">REGISTRO DE ROTAS</h3>
+
+            <section class="col-12 m-top">
+                <div class="row">
+                    <div class="col-4 mt-5 border-right ">
+                        <form action="principal.html" class=" border-right col-9 m-auto">
+                            <label for="">Nome da Rota</label>
+                            <input type="nome" class="form-control m-1" required placeholder="Escreva o nome">
+                            <label for="">Preço em vigor</label>
+                            <input type="text" class="form-control m-1" required placeholder="Escreva preço ">
+                            <label for="">Pontos de Carga oficiais</label>
+                            <input type="email" class="form-control m-1" required placeholder="Escreva as paragens">
+                            <br>
+                            <label for="">Selecione o estado da Rota</label>
+                            <select name="" class="form-control m-1" id="">
+                                <option value="">Estado... </option>
+                                <option value="M" name="">Activa</option>
+                                <option value="F" name="">Inativa</option>
+                                <option value="F" name="">Inativa</option>  
+                            </select>
+
+                            <div class="mt-2">
+                                <button class=" btn bg-fundo col-12 text-white botao mt-2">Registrar</button>
+                            </div>
+                        </form>
+                    </div>
+                
+                    <div class="col-7 mt-5 p-3 border">
+                        <table class="table table-striped rota-table-scroll bg-light ">
+                            <thead class="thead-light">
+                                <th>Nº</th>
+                                <th>Nome</th>
+                                <th>Preço</th>                                
+                                <th>Pontos de Carga</th>
+                                <th>opções</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Aeroporto x Golf 2</td>
+                                    <td>200kz</td>
+                                    <td>rocha, gamek, vila, projecto</td>
+                                    <td>
+                                        <a href="perfil.html"><i class="text-info bi bi-eye-fill"></i></a>
+                                        <a href="funcionario.html"><i class="text-warning bi bi-brush-fill"></i></a>
+                                        <a href=""><i class="text-danger bi bi-x-square-fill"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Gamek x Benfica</td>
+                                    <td>200kz</td>
+                                    <td>multiperfil, futungo</td>
+                                    <td>
+                                        <a href="perfil.html"><i class="text-info bi bi-eye-fill"></i></a>
+                                        <a href="funcionario.html"><i class="text-warning bi bi-brush-fill"></i></a>
+                                        <a href=""><i class="text-danger bi bi-x-square-fill"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Rotunda do camama x Zango 3</td>
+                                    <td>500kz</td>
+                                    <td>camama 1, 11 de novembro, mutamba </td>
+                                    <td>
+                                        <a href="perfil.html"><i class="text-info bi bi-eye-fill"></i></a>
+                                        <a href="funcionario.html"><i class="text-warning bi bi-brush-fill"></i></a>
+                                        <a href=""><i class="text-danger bi bi-x-square-fill"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Aeroporto x Golf 2</td>
+                                    <td>200kz</td>
+                                    <td>rocha, gamek, vila, projecto</td>
+                                    <td>
+                                        <a href="perfil.html"><i class="text-info bi bi-eye-fill"></i></a>
+                                        <a href="funcionario.html"><i class="text-warning bi bi-brush-fill"></i></a>
+                                        <a href=""><i class="text-danger bi bi-x-square-fill"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Gamek x Benfica</td>
+                                    <td>200kz</td>
+                                    <td>multiperfil, futungo</td>
+                                    <td>
+                                        <a href="perfil.html"><i class="text-info bi bi-eye-fill"></i></a>
+                                        <a href="funcionario.html"><i class="text-warning bi bi-brush-fill"></i></a>
+                                        <a href=""><i class="text-danger bi bi-x-square-fill"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Rotunda do camama x Zango 3</td>
+                                    <td>500kz</td>
+                                    <td>camama 1, 11 de novembro, mutamba</td>
+                                    <td>
+                                        <a href="perfil.html"><i class="text-info bi bi-eye-fill"></i></a>
+                                        <a href="funcionario.html"><i class="text-warning bi bi-brush-fill"></i></a>
+                                        <a href=""><i class="text-danger bi bi-x-square-fill"></i></a>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>1</td>
+                                    <td>Aeroporto x Golf 2</td>
+                                    <td>200kz</td>
+                                    <td>rocha, gamek, vila, projecto</td>
+                                    <td>
+                                        <a href="perfil.html"><i class="text-info bi bi-eye-fill"></i></a>
+                                        <a href="funcionario.html"><i class="text-warning bi bi-brush-fill"></i></a>
+                                        <a href=""><i class="text-danger bi bi-x-square-fill"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Gamek x Benfica</td>
+                                    <td>200kz</td>
+                                    <td>multiperfil, futungo</td>
+                                    <td>
+                                        <a href="perfil.html"><i class="text-info bi bi-eye-fill"></i></a>
+                                        <a href="funcionario.html"><i class="text-warning bi bi-brush-fill"></i></a>
+                                        <a href=""><i class="text-danger bi bi-x-square-fill"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Rotunda do camama x Zango 3</td>
+                                    <td>500kz</td>
+                                    <td>camama 1, 11 de novembro, mutamba</td>
+                                    <td>
+                                        <a href="perfil.html"><i class="text-info bi bi-eye-fill"></i></a>
+                                        <a href="funcionario.html"><i class="text-warning bi bi-brush-fill"></i></a>
+                                        <a href=""><i class="text-danger bi bi-x-square-fill"></i></a>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>1</td>
+                                    <td>Aeroporto x Golf 2</td>
+                                    <td>200kz</td>
+                                    <td>rocha, gamek, vila, projecto</td>
+                                    <td>
+                                        <a href="perfil.html"><i class="text-info bi bi-eye-fill"></i></a>
+                                        <a href="funcionario.html"><i class="text-warning bi bi-brush-fill"></i></a>
+                                        <a href=""><i class="text-danger bi bi-x-square-fill"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Gamek x Benfica</td>
+                                    <td>200kz</td>
+                                    <td>multiperfil, futungo</td>
+                                    <td>
+                                        <a href="perfil.html"><i class="text-info bi bi-eye-fill"></i></a>
+                                        <a href="funcionario.html"><i class="text-warning bi bi-brush-fill"></i></a>
+                                        <a href=""><i class="text-danger bi bi-x-square-fill"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Rotunda do camama x Zango 3</td>
+                                    <td>500kz</td>
+                                    <td>camama 1, 11 de novembro, mutamba</td>
+                                    <td>
+                                        <a href="perfil.html"><i class="text-info bi bi-eye-fill"></i></a>
+                                        <a href="funcionario.html"><i class="text-warning bi bi-brush-fill"></i></a>
+                                        <a href=""><i class="text-danger bi bi-x-square-fill"></i></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>  
+            </section>
     </main>
 
-</body>
 
-</html>
+
+</body>
